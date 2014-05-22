@@ -19,8 +19,6 @@
 		4EC3328F192C6A1100CCF1EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC3328E192C6A1100CCF1EC /* XCTest.framework */; };
 		4EC33290192C6A1200CCF1EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC3326F192C6A1100CCF1EC /* Foundation.framework */; };
 		4EC33291192C6A1200CCF1EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC33273192C6A1100CCF1EC /* UIKit.framework */; };
-		4EC33299192C6A1200CCF1EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EC33297192C6A1200CCF1EC /* InfoPlist.strings */; };
-		4EC3329B192C6A1200CCF1EC /* testBlurredUIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC3329A192C6A1200CCF1EC /* testBlurredUIViewTests.m */; };
 		4EC332A6192C6A5800CCF1EC /* UIView+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC332A5192C6A5800CCF1EC /* UIView+Blur.m */; };
 /* End PBXBuildFile section */
 
@@ -51,9 +49,6 @@
 		4EC33287192C6A1100CCF1EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4EC3328D192C6A1100CCF1EC /* testBlurredUIViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testBlurredUIViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC3328E192C6A1100CCF1EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4EC33296192C6A1200CCF1EC /* testBlurredUIViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testBlurredUIViewTests-Info.plist"; sourceTree = "<group>"; };
-		4EC33298192C6A1200CCF1EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4EC3329A192C6A1200CCF1EC /* testBlurredUIViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testBlurredUIViewTests.m; sourceTree = "<group>"; };
 		4EC332A4192C6A5800CCF1EC /* UIView+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Blur.h"; sourceTree = SOURCE_ROOT; };
 		4EC332A5192C6A5800CCF1EC /* UIView+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Blur.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -86,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				4EC33275192C6A1100CCF1EC /* testBlurredUIView */,
-				4EC33294192C6A1200CCF1EC /* testBlurredUIViewTests */,
 				4EC3326E192C6A1100CCF1EC /* Frameworks */,
 				4EC3326D192C6A1100CCF1EC /* Products */,
 			);
@@ -135,24 +129,6 @@
 				4EC33278192C6A1100CCF1EC /* InfoPlist.strings */,
 				4EC3327B192C6A1100CCF1EC /* main.m */,
 				4EC3327D192C6A1100CCF1EC /* testBlurredUIView-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4EC33294192C6A1200CCF1EC /* testBlurredUIViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				4EC3329A192C6A1200CCF1EC /* testBlurredUIViewTests.m */,
-				4EC33295192C6A1200CCF1EC /* Supporting Files */,
-			);
-			path = testBlurredUIViewTests;
-			sourceTree = "<group>";
-		};
-		4EC33295192C6A1200CCF1EC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4EC33296192C6A1200CCF1EC /* testBlurredUIViewTests-Info.plist */,
-				4EC33297192C6A1200CCF1EC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -244,7 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EC33299192C6A1200CCF1EC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EC3329B192C6A1200CCF1EC /* testBlurredUIViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,14 +269,6 @@
 				4EC33282192C6A1100CCF1EC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4EC33297192C6A1200CCF1EC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4EC33298192C6A1200CCF1EC /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -463,6 +429,7 @@
 				4EC332A0192C6A1200CCF1EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EC332A1192C6A1200CCF1EC /* Build configuration list for PBXNativeTarget "testBlurredUIViewTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +438,7 @@
 				4EC332A3192C6A1200CCF1EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
