@@ -1,9 +1,9 @@
 UIView+Blur
 =============
 
-There's a ton of ways to get this done, namely nicklockwood's FXBlurView and radi's LiveFrost but those solutions requires us to use a subclass of UIView in order to make it work.
+There's a ton of ways to get this done, namely nicklockwood's FXBlurView and radi's LiveFrost but those solutions requires you to use a subclass of UIView in order to make it work. For older iOS version support you should go with those solutions, but for iOS7 only, this is a lighter solution.
 
-This category uses the UIToolbar layer hack as described many times over the web.
+This category uses the UIToolbar layer hack as described so many times all over the web.
 
 <img alt="ScreenShot" src="https://github.com/mmusallam/UIView-Blur/blob/master/testBlurredUIView/blurCategorySnapshot.gif?raw=true" width="320px"/>
 
