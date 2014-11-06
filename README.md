@@ -29,8 +29,11 @@ UIView* view = [[UIView alloc] initWithFrame:CGRectMake(100, 160, 100, 100)];
 
 Here's what can be customized, (check the .h file for more explanations):
 ````
-/* The UIToolbar that has been put on the current view, use it to do your bidding */
+/* The UIToolbar/UIVisualEffectView(ios8) that has been put on the current view, use it to do your bidding */
 @property (strong,nonatomic,readonly) UIView* blurBackground;
+
+/* The UIVisualEffectView that should be used for vibrancy element, add subviews to .contentView (ios8 only) */
+@property (strong,nonatomic,readonly) UIVisualEffectView* blurVibrancyBackground NS_AVAILABLE_IOS(8_0);
 
 /* tint color of the blurred view */
 @property (strong,nonatomic) UIColor* blurTintColor;
@@ -41,7 +44,7 @@ Here's what can be customized, (check the .h file for more explanations):
 /* returns if blurring is enabled */
 @property (readonly,nonatomic) BOOL isBlurred;
 
-/* Style of Toolbar, remapped to UIViewBlurStyle typedef above */
+/* Style of Blur, remapped to UIViewBlurStyle typedef above */
 @property (assign,nonatomic) UIViewBlurStyle blurStyle;
 ````
 
