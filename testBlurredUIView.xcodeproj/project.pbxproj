@@ -16,21 +16,8 @@
 		4EC33283192C6A1100CCF1EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC33281192C6A1100CCF1EC /* Main.storyboard */; };
 		4EC33286192C6A1100CCF1EC /* KSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC33285192C6A1100CCF1EC /* KSViewController.m */; };
 		4EC33288192C6A1100CCF1EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC33287192C6A1100CCF1EC /* Images.xcassets */; };
-		4EC3328F192C6A1100CCF1EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC3328E192C6A1100CCF1EC /* XCTest.framework */; };
-		4EC33290192C6A1200CCF1EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC3326F192C6A1100CCF1EC /* Foundation.framework */; };
-		4EC33291192C6A1200CCF1EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EC33273192C6A1100CCF1EC /* UIKit.framework */; };
 		4EC332A6192C6A5800CCF1EC /* UIView+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC332A5192C6A5800CCF1EC /* UIView+Blur.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4EC33292192C6A1200CCF1EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4EC33264192C6A1100CCF1EC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4EC3326B192C6A1100CCF1EC;
-			remoteInfo = testBlurredUIView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4EC3326C192C6A1100CCF1EC /* testBlurredUIView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testBlurredUIView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +34,6 @@
 		4EC33284192C6A1100CCF1EC /* KSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSViewController.h; sourceTree = "<group>"; };
 		4EC33285192C6A1100CCF1EC /* KSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSViewController.m; sourceTree = "<group>"; };
 		4EC33287192C6A1100CCF1EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4EC3328D192C6A1100CCF1EC /* testBlurredUIViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testBlurredUIViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC3328E192C6A1100CCF1EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4EC332A4192C6A5800CCF1EC /* UIView+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Blur.h"; sourceTree = SOURCE_ROOT; };
 		4EC332A5192C6A5800CCF1EC /* UIView+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Blur.m"; sourceTree = SOURCE_ROOT; };
@@ -61,16 +47,6 @@
 				4EC33272192C6A1100CCF1EC /* CoreGraphics.framework in Frameworks */,
 				4EC33274192C6A1100CCF1EC /* UIKit.framework in Frameworks */,
 				4EC33270192C6A1100CCF1EC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4EC3328A192C6A1100CCF1EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4EC3328F192C6A1100CCF1EC /* XCTest.framework in Frameworks */,
-				4EC33291192C6A1200CCF1EC /* UIKit.framework in Frameworks */,
-				4EC33290192C6A1200CCF1EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				4EC3326C192C6A1100CCF1EC /* testBlurredUIView.app */,
-				4EC3328D192C6A1100CCF1EC /* testBlurredUIViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,24 +128,6 @@
 			productReference = 4EC3326C192C6A1100CCF1EC /* testBlurredUIView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4EC3328C192C6A1100CCF1EC /* testBlurredUIViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4EC332A1192C6A1200CCF1EC /* Build configuration list for PBXNativeTarget "testBlurredUIViewTests" */;
-			buildPhases = (
-				4EC33289192C6A1100CCF1EC /* Sources */,
-				4EC3328A192C6A1100CCF1EC /* Frameworks */,
-				4EC3328B192C6A1100CCF1EC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4EC33293192C6A1200CCF1EC /* PBXTargetDependency */,
-			);
-			name = testBlurredUIViewTests;
-			productName = testBlurredUIViewTests;
-			productReference = 4EC3328D192C6A1100CCF1EC /* testBlurredUIViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,11 +137,6 @@
 				CLASSPREFIX = KS;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "kronositi inc.";
-				TargetAttributes = {
-					4EC3328C192C6A1100CCF1EC = {
-						TestTargetID = 4EC3326B192C6A1100CCF1EC;
-					};
-				};
 			};
 			buildConfigurationList = 4EC33267192C6A1100CCF1EC /* Build configuration list for PBXProject "testBlurredUIView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -200,7 +152,6 @@
 			projectRoot = "";
 			targets = (
 				4EC3326B192C6A1100CCF1EC /* testBlurredUIView */,
-				4EC3328C192C6A1100CCF1EC /* testBlurredUIViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -213,13 +164,6 @@
 				4EC33288192C6A1100CCF1EC /* Images.xcassets in Resources */,
 				4EC3327A192C6A1100CCF1EC /* InfoPlist.strings in Resources */,
 				4EC33283192C6A1100CCF1EC /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4EC3328B192C6A1100CCF1EC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,22 +181,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EC33289192C6A1100CCF1EC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4EC33293192C6A1200CCF1EC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4EC3326B192C6A1100CCF1EC /* testBlurredUIView */;
-			targetProxy = 4EC33292192C6A1200CCF1EC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4EC33278192C6A1100CCF1EC /* InfoPlist.strings */ = {
@@ -370,46 +299,6 @@
 			};
 			name = Release;
 		};
-		4EC332A2192C6A1200CCF1EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/testBlurredUIView.app/testBlurredUIView";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "testBlurredUIView/testBlurredUIView-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "testBlurredUIViewTests/testBlurredUIViewTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		4EC332A3192C6A1200CCF1EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/testBlurredUIView.app/testBlurredUIView";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "testBlurredUIView/testBlurredUIView-Prefix.pch";
-				INFOPLIST_FILE = "testBlurredUIViewTests/testBlurredUIViewTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -427,15 +316,6 @@
 			buildConfigurations = (
 				4EC3329F192C6A1200CCF1EC /* Debug */,
 				4EC332A0192C6A1200CCF1EC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4EC332A1192C6A1200CCF1EC /* Build configuration list for PBXNativeTarget "testBlurredUIViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4EC332A2192C6A1200CCF1EC /* Debug */,
-				4EC332A3192C6A1200CCF1EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

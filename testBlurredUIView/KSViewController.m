@@ -25,12 +25,19 @@
     [self.view addSubview:imageView];
     
     UIView* view = [[UIView alloc] initWithFrame:CGRectMake(100, 160, 100, 100)];
+    [view enableBlur:YES];
+    
     UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     [iv setImage:[UIImage imageNamed:@"checkmark"]];
     iv.contentMode = UIViewContentModeCenter;
-    [view addSubview:iv];
     
-    [view enableBlur:YES];
+    if(IOS_MAJOR_VERSION>=8) {
+        [view.blurVibrancyBackground.contentView addSubview:iv];
+    } else {
+        [view addSubview:iv];
+    }
+    
+    
     [view setBlurTintColor:[UIColor redColor]];
     view.layer.cornerRadius = 5;
     self.squareView = view;
@@ -42,22 +49,23 @@
     [self.view addSubview:scrollview];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(10, 30, 100, 20);
+    button.frame = CGRectMake(10, 30, 150, 20);
     button.tintColor = [UIColor whiteColor];
+    button.titleLabel.textAlignment = NSTextAlignmentLeft;
     [button setTitle:@"Toggle Style" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(toggleStyle:) forControlEvents:UIControlEventTouchDown];
     [scrollview addSubview:button];
     
     button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     button.tintColor = [UIColor whiteColor];
-    button.frame = CGRectMake(10, 60, 100, 20);
+    button.frame = CGRectMake(10, 60, 150, 20);
     [button setTitle:@"Toggle Color" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(toggleColor:) forControlEvents:UIControlEventTouchDown];
     [scrollview addSubview:button];
 
     button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     button.tintColor = [UIColor whiteColor];
-    button.frame = CGRectMake(10, 90, 100, 20);
+    button.frame = CGRectMake(10, 90, 150, 20);
     [button setTitle:@"Toggle Blur" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(toggleBlur:) forControlEvents:UIControlEventTouchDown];
     [scrollview addSubview:button];
@@ -71,8 +79,11 @@
 
 -(void)toggleStyle:(UIButton*)sender
 {
-    sender.selected = !sender.isSelected;
-    self.squareView.blurStyle = sender.isSelected;
+    sender.tag++;
+    sender.tag %= 3;
+    NSArray* titles = @[@"Style: ExtraLight",@"Style: Light",@"Style: Dark",];
+    [sender setTitle:titles[sender.tag] forState:UIControlStateNormal];
+    self.squareView.blurStyle = (UIViewBlurStyle)sender.tag;
 }
 
 -(void)toggleColor:(UIButton*)sender

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0F1228B7-40C5-488B-97A0-833858D6C099</string>
+	<key>IDESourceControlProjectName</key>
+	<string>testBlurredUIView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>760CD8ACD1364C3F0246D5BEBAB629E160EC0882</key>
+		<string>https://github.com/mikeMTOL/UIView-Blur.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>testBlurredUIView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>760CD8ACD1364C3F0246D5BEBAB629E160EC0882</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mikeMTOL/UIView-Blur.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>760CD8ACD1364C3F0246D5BEBAB629E160EC0882</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>760CD8ACD1364C3F0246D5BEBAB629E160EC0882</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UIView-Blur</string>
+		</dict>
+	</array>
+</dict>
+</plist>
