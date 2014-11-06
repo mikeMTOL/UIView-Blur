@@ -6,7 +6,7 @@ Apple finally gave us a neat way to implement dynamic blurs with UIVisualEffectV
 
 This category supports both iOS8 and iOS7 (iOS7 with UIToolbar trick)
 
-for iOS8 only, there's now a blurVibrancyBackground property onto which you must add UIViews that you want to take advantage of UIVibrancyEffect effect. Please look at the demo project on ways how to use it.
+for iOS8 only, there's now a **blurVibrancyBackground** property onto which you must add UIViews that you want to take advantage of the UIVibrancyEffect effect. Please look at  demo project for an example on how to use it.
 
 <img alt="ScreenShot" src="https://github.com/mmusallam/UIView-Blur/blob/master/testBlurredUIView/blurCategorySnapshot.gif?raw=true" width="320px"/>
 
