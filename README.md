@@ -24,7 +24,7 @@ Create your UIView and activate the blur
 UIView* view = [[UIView alloc] initWithFrame:CGRectMake(100, 160, 100, 100)];    
 [view enableBlur:YES];
 [view setBlurTintColor:[UIColor redColor]];
-[view setBlurTintColor:[UIColor redColor]];
+[view setBlurTintColorIntensity:0.3f];
 ````
 
 Here's what can be customized, (check the .h file for more explanations):

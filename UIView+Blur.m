@@ -187,10 +187,12 @@ NSString const *blurStyleKey = @"blurStyleKey";
     NSNumber *intensity = [NSNumber numberWithDouble:blurTintColorIntensity];
     objc_setAssociatedObject(self, &blurTintColorIntensityKey, intensity, OBJC_ASSOCIATION_RETAIN);
     
-    if(self.blurBackground) {
-        CALayer *colorLayer = objc_getAssociatedObject(self, &blurTintColorLayerKey);
-        if(colorLayer) {
-            colorLayer.opacity = 0.5f*intensity.floatValue;
+    if(IOS_MAJOR_VERSION<8) {
+        if(self.blurBackground) {
+            CALayer *colorLayer = objc_getAssociatedObject(self, &blurTintColorLayerKey);
+            if(colorLayer) {
+                colorLayer.opacity = 0.5f*intensity.floatValue;
+            }
         }
     }
 }
