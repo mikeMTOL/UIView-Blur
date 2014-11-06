@@ -1,9 +1,12 @@
 UIView+Blur
 =============
+iOS8 support!!
 
-There's a ton of ways to get this done, namely nicklockwood's FXBlurView and radi's LiveFrost but those solutions requires you to use a subclass of UIView in order to make it work. For older iOS version support you should go with those solutions, but for iOS7 only, this is a lighter solution.
+Apple finally gave us a neat way to implement dynamic blurs with UIVisualEffectView.
 
-This category uses the UIToolbar layer hack as described so many times all over the web.
+This category supports both iOS8 and iOS7 (iOS7 with UIToolbar trick)
+
+for iOS8 only, there's now a blurVibrancyBackground property onto which you must add UIViews that you want to take advantage of UIVibrancyEffect effect. Please look at the demo project on ways how to use it.
 
 <img alt="ScreenShot" src="https://github.com/mmusallam/UIView-Blur/blob/master/testBlurredUIView/blurCategorySnapshot.gif?raw=true" width="320px"/>
 
@@ -20,6 +23,7 @@ Create your UIView and activate the blur
 ```` objective-c
 UIView* view = [[UIView alloc] initWithFrame:CGRectMake(100, 160, 100, 100)];    
 [view enableBlur:YES];
+[view setBlurTintColor:[UIColor redColor]];
 [view setBlurTintColor:[UIColor redColor]];
 ````
 

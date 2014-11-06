@@ -37,8 +37,7 @@
         [view addSubview:iv];
     }
     
-    
-    [view setBlurTintColor:[UIColor redColor]];
+    [view setBlurTintColor:[UIColor clearColor]];
     view.layer.cornerRadius = 5;
     self.squareView = view;
     
@@ -88,12 +87,10 @@
 
 -(void)toggleColor:(UIButton*)sender
 {
-    sender.selected = !sender.selected;
-    if(!sender.isSelected) {
-        self.squareView.blurTintColor = [UIColor redColor];
-    } else {
-        self.squareView.blurTintColor = [UIColor brownColor];
-    }
+    sender.tag++;
+    sender.tag %= 3;
+    NSArray* colors = @[[UIColor clearColor], [UIColor redColor], [UIColor brownColor]];
+    self.squareView.blurTintColor = colors[sender.tag];
 }
 
 -(void)toggleBlur:(UIButton*)sender
