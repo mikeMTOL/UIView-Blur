@@ -51,7 +51,7 @@ Here's what can be customized, (check the .h file for more explanations):
 Requirements
 ---------------
 No requirements,
-I've tested this project with iOS 7.1
+I've tested this project with iOS 7.1 & iOS 8.1
 
 
 More
